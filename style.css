@@ -1,0 +1,359 @@
+/*
+  style.css
+  ---------
+  Styles for the floating Agricultural Chatbot widget.
+  Everything is scoped under #agri-chat-root so it won't clash with
+  the styles of whatever PHP/HTML site this gets embedded into.
+*/
+
+#agri-chat-root {
+  --agri-deep: #17392A;       /* header / dark green */
+  --agri-primary: #2F7D52;    /* main growth green */
+  --agri-primary-dark: #235F3E;
+  --agri-mint: #B7E4C7;       /* light accent */
+  --agri-soil: #8A5A34;       /* warm soil brown accent */
+  --agri-paper: #F6F4EC;      /* chat background, like paper/soil card */
+  --agri-text: #1E2A22;
+  --agri-text-soft: #5B6B60;
+  --agri-white: #FFFFFF;
+  --agri-shadow: 0 10px 30px rgba(23, 57, 42, 0.28);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999999;
+  color: var(--agri-text);
+}
+
+#agri-chat-root * {
+  box-sizing: border-box;
+}
+
+/* ---------- Floating launcher button ---------- */
+
+.agri-launcher {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: radial-gradient(circle at 30% 25%, #4C9A6E, var(--agri-primary) 60%, var(--agri-primary-dark) 100%);
+  box-shadow: var(--agri-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: agri-sprout-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.agri-launcher:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 14px 34px rgba(23, 57, 42, 0.34);
+}
+
+.agri-launcher svg {
+  width: 28px;
+  height: 28px;
+}
+
+.agri-launcher .agri-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 16px;
+  height: 16px;
+  background: var(--agri-soil);
+  border: 2px solid var(--agri-paper);
+  border-radius: 50%;
+}
+
+@keyframes agri-sprout-in {
+  0% { transform: scale(0.4); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ---------- Chat panel ---------- */
+
+.agri-panel {
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+  width: 360px;
+  max-width: calc(100vw - 32px);
+  height: 540px;
+  max-height: calc(100vh - 120px);
+  background: var(--agri-paper);
+  border-radius: 18px;
+  box-shadow: var(--agri-shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform-origin: bottom right;
+  transform: scale(0.85) translateY(12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2), opacity 0.18s ease;
+}
+
+#agri-chat-root.agri-open .agri-panel {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#agri-chat-root.agri-open .agri-launcher .agri-icon-chat {
+  display: block;
+}
+#agri-chat-root.agri-open .agri-launcher .agri-icon-leaf {
+  display: none;
+}
+#agri-chat-root:not(.agri-open) .agri-launcher .agri-icon-chat {
+  display: none;
+}
+
+/* ---------- Panel header ---------- */
+
+.agri-header {
+  background: linear-gradient(135deg, var(--agri-deep), var(--agri-primary-dark));
+  color: var(--agri-white);
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.agri-header-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.agri-header-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.agri-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.agri-header-title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.agri-header-subtitle {
+  font-size: 12px;
+  color: var(--agri-mint);
+  margin-top: 2px;
+}
+
+.agri-close-btn {
+  background: none;
+  border: none;
+  color: var(--agri-white);
+  opacity: 0.85;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+}
+
+.agri-close-btn:hover {
+  opacity: 1;
+}
+
+/* ---------- Messages ---------- */
+
+.agri-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(183, 228, 199, 0.35), transparent 40%),
+    var(--agri-paper);
+}
+
+.agri-msg {
+  max-width: 84%;
+  padding: 10px 13px;
+  border-radius: 14px;
+  font-size: 13.5px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  animation: agri-msg-in 0.18s ease both;
+}
+
+@keyframes agri-msg-in {
+  0% { opacity: 0; transform: translateY(4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.agri-msg-bot {
+  align-self: flex-start;
+  background: var(--agri-white);
+  border: 1px solid #E4E0D2;
+  border-bottom-left-radius: 4px;
+  color: var(--agri-text);
+}
+
+.agri-msg-user {
+  align-self: flex-end;
+  background: var(--agri-primary);
+  color: var(--agri-white);
+  border-bottom-right-radius: 4px;
+}
+
+.agri-msg-meta {
+  font-size: 10.5px;
+  color: var(--agri-text-soft);
+  margin-top: 4px;
+  align-self: flex-start;
+}
+
+/* Quick reply chips shown at the start / after each answer */
+
+.agri-quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.agri-chip {
+  border: 1px solid var(--agri-primary);
+  color: var(--agri-primary-dark);
+  background: var(--agri-white);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.agri-chip:hover {
+  background: var(--agri-primary);
+  color: var(--agri-white);
+}
+
+/* Seller result card (shown inside the /buy results) */
+
+.agri-seller-card {
+  border: 1px solid #E4E0D2;
+  background: var(--agri-white);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.agri-seller-card strong {
+  color: var(--agri-primary-dark);
+}
+
+/* Typing indicator */
+
+.agri-typing {
+  display: inline-flex;
+  gap: 4px;
+  align-self: flex-start;
+  padding: 10px 13px;
+  background: var(--agri-white);
+  border: 1px solid #E4E0D2;
+  border-radius: 14px;
+  border-bottom-left-radius: 4px;
+}
+
+.agri-typing span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--agri-text-soft);
+  opacity: 0.5;
+  animation: agri-typing-bounce 1s infinite ease-in-out;
+}
+
+.agri-typing span:nth-child(2) { animation-delay: 0.15s; }
+.agri-typing span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes agri-typing-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30% { transform: translateY(-3px); opacity: 1; }
+}
+
+/* ---------- Input area ---------- */
+
+.agri-input-row {
+  flex-shrink: 0;
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: var(--agri-white);
+  border-top: 1px solid #E4E0D2;
+}
+
+.agri-input-row input {
+  flex: 1;
+  border: 1px solid #D8D3C0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  outline: none;
+  background: var(--agri-paper);
+  color: var(--agri-text);
+}
+
+.agri-input-row input:focus {
+  border-color: var(--agri-primary);
+}
+
+.agri-send-btn {
+  background: var(--agri-primary);
+  border: none;
+  color: var(--agri-white);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s ease;
+}
+
+.agri-send-btn:hover {
+  background: var(--agri-primary-dark);
+}
+
+.agri-send-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 420px) {
+  #agri-chat-root {
+    right: 12px;
+    bottom: 12px;
+  }
+  .agri-panel {
+    width: calc(100vw - 24px);
+    height: calc(100vh - 100px);
+    bottom: 76px;
+  }
+}

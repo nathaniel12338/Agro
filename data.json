@@ -1,0 +1,252 @@
+[
+  {
+    "category": "maize",
+    "questions": [
+      "When is the best time to plant maize?",
+      "Maize planting time in Nigeria",
+      "What season is best for corn?",
+      "When I suppose plant maize?"
+    ],
+    "answer": "In most parts of Nigeria, maize is best planted at the start of the rainy season — late March to April in the south, and May to June in the north. If you have irrigation, you can also plant a dry-season crop between November and December. Always plant after the first steady rains so the soil has enough moisture for germination."
+  },
+  {
+    "category": "maize",
+    "questions": [
+      "What spacing should I use for maize?",
+      "How far apart should I plant maize seeds?",
+      "Maize planting distance and depth",
+      "How I go arrange my maize for farm?"
+    ],
+    "answer": "Plant maize at a spacing of 75cm between rows and 25-30cm between plants, placing 1-2 seeds per hole at a depth of about 3-5cm. This gives roughly 53,000-88,000 plants per hectare depending on variety. Wider spacing works for taller local varieties, while improved hybrids can be planted a bit closer."
+  },
+  {
+    "category": "maize",
+    "questions": [
+      "How should I apply fertilizer to maize?",
+      "Best fertilizer for maize in Nigeria",
+      "Maize fertilizer application schedule",
+      "Which fertilizer I go use for my corn?"
+    ],
+    "answer": "Apply NPK 15:15:15 at planting or 2 weeks after emergence, about 2 bags (100kg) per hectare. Follow up with a top-dress of Urea (46% N) at 3-4 weeks after planting, around 1-1.5 bags per hectare, applied close to the plant base then covered lightly with soil. Avoid letting fertilizer touch the leaves directly to prevent scorching."
+  },
+  {
+    "category": "maize",
+    "questions": [
+      "How do I control fall armyworm in maize?",
+      "Maize pest control fall armyworm",
+      "What is destroying my maize leaves?",
+      "Wetin dey chop my maize leaf, na worm"
+    ],
+    "answer": "Fall armyworm is the most common maize pest in Nigeria. Scout your field weekly and check the whorl (funnel) of young plants for caterpillars and window-like leaf damage. Control it by spraying approved insecticides like Emamectin benzoate or Lambda-cyhalothrin early in the morning or evening, and rotate chemicals to avoid resistance. Neem extract sprays also help for light infestations, and early planting can reduce pressure."
+  },
+  {
+    "category": "maize",
+    "questions": [
+      "How do I prevent maize streak virus?",
+      "What causes stunted, striped maize leaves?",
+      "Maize disease with yellow streaks on leaves",
+      "My maize get yellow line for leaf, wetin cause am?"
+    ],
+    "answer": "Yellow streaking with stunted growth is usually maize streak virus, spread by leafhoppers. Prevent it by planting streak-resistant hybrid varieties, planting early before leafhopper populations build up, and removing infected plants promptly. Controlling leafhoppers with insecticide at the seedling stage also reduces spread."
+  },
+  {
+    "category": "maize",
+    "questions": [
+      "When should I harvest maize?",
+      "How do I know maize is ready for harvest?",
+      "Maize harvesting time and signs of readiness",
+      "How I go know say my maize don ready?"
+    ],
+    "answer": "Maize is ready to harvest 90-120 days after planting depending on the variety. Look for husks turning brown and dry, and kernels that are hard and show a black layer at the base when you press a fingernail into them. For fresh (green) maize, harvest 60-75 days after planting while the husk is still green and kernels are soft and milky."
+  },
+  {
+    "category": "rice",
+    "questions": [
+      "When is the best time to plant rice?",
+      "Rice planting season in Nigeria",
+      "What month should I sow rice?",
+      "When I go plant my rice for farm?"
+    ],
+    "answer": "Upland rice is typically planted at the start of the rainy season, around April-June, while lowland/swamp rice can be planted from June-July to align with peak rainfall, or year-round with irrigation. In the north, rice is often grown under irrigation during the dry season from November to March."
+  },
+  {
+    "category": "rice",
+    "questions": [
+      "How do I start a rice nursery and transplant it?",
+      "Rice nursery preparation and transplanting steps",
+      "How to raise rice seedlings before transplanting",
+      "How I go nurse my rice before I plant am?"
+    ],
+    "answer": "Prepare a well-drained nursery bed, soak seeds in water for 24 hours then drain for another 24 hours to encourage sprouting, and sow them thinly on the nursery bed. Seedlings are usually ready to transplant 18-21 days after sowing, when they have 3-4 leaves. Transplant 2-3 seedlings per hole at a spacing of 20cm x 20cm into the main field."
+  },
+  {
+    "category": "rice",
+    "questions": [
+      "How should I fertilize rice?",
+      "Best fertilizer program for rice farming",
+      "Rice fertilizer application rate",
+      "Which fertilizer good for rice?"
+    ],
+    "answer": "Apply NPK 15:15:15 at transplanting or 2 weeks after direct seeding, about 2 bags per hectare. Top-dress with Urea in two split doses — at tillering (around 3 weeks) and at panicle initiation (around 6-7 weeks) — roughly 1 bag per hectare each time. Keep the field well-drained during fertilizer application so nutrients aren't washed away."
+  },
+  {
+    "category": "rice",
+    "questions": [
+      "How do I control rice blast disease?",
+      "My rice leaves have grey spots, what is it?",
+      "Rice disease with diamond-shaped leaf lesions",
+      "Wetin be this grey spot for my rice leaf?"
+    ],
+    "answer": "Grey, diamond-shaped spots on rice leaves point to rice blast disease, a fungal infection favored by high humidity and excess nitrogen. Use blast-resistant varieties, avoid over-applying nitrogen fertilizer, ensure good field drainage and spacing for airflow, and apply a fungicide such as Tricyclazole if the infection is spreading fast."
+  },
+  {
+    "category": "rice",
+    "questions": [
+      "How should I manage water for rice farming?",
+      "Rice water management and irrigation tips",
+      "How much water does rice need?",
+      "How I go take manage water for my rice farm?"
+    ],
+    "answer": "Lowland rice needs about 5cm of standing water maintained from 2 weeks after transplanting through the flowering stage, then the field can be drained gradually 2-3 weeks before harvest to help the grains ripen and the soil firm up for harvesting. Avoid letting the field dry out completely during flowering, as this stage is most sensitive to water stress."
+  },
+  {
+    "category": "rice",
+    "questions": [
+      "When should I harvest rice?",
+      "Signs that rice is ready for harvesting",
+      "Rice harvesting time after planting",
+      "How I go know say my rice don ready for cut?"
+    ],
+    "answer": "Rice is ready for harvest about 105-150 days after planting, depending on variety. The field is ready when about 80-85% of the grains have turned golden-yellow and the grains feel hard when bitten. Harvesting slightly before full maturity reduces grain shattering and losses."
+  },
+  {
+    "category": "cassava",
+    "questions": [
+      "When is the best time to plant cassava?",
+      "Cassava planting season in Nigeria",
+      "What month should I plant cassava stems?",
+      "When I fit plant my cassava?"
+    ],
+    "answer": "Cassava can be planted almost any time of the year where rainfall is adequate, but the best time is at the start of the rains, around March-May, so cuttings establish well before dry spells. Avoid planting late in the rainy season, as young cassava needs consistent moisture in its first 2-3 months."
+  },
+  {
+    "category": "cassava",
+    "questions": [
+      "What spacing is recommended for cassava?",
+      "How far apart should cassava cuttings be planted?",
+      "Cassava planting distance",
+      "How I go space my cassava for farm?"
+    ],
+    "answer": "Plant cassava stem cuttings at a spacing of 1m x 1m for sole cropping, giving about 10,000 plants per hectare. If intercropping with maize or vegetables, you can widen the spacing to 1m x 1.5m or plant in double rows to leave space for the companion crop."
+  },
+  {
+    "category": "cassava",
+    "questions": [
+      "How do I control cassava mealybug?",
+      "My cassava leaves are curling and stunted, why?",
+      "Cassava pest with white cottony insects",
+      "Wetin dey cause my cassava to be curling like this?"
+    ],
+    "answer": "White cottony insects clustering on shoots with curling, stunted leaves indicate cassava mealybug infestation. Control it by removing and destroying heavily infested plant parts, using healthy planting material, and encouraging natural predators like ladybird beetles. In severe cases, an approved insecticide can be used, but biological control is usually recommended for mealybug."
+  },
+  {
+    "category": "cassava",
+    "questions": [
+      "How do I manage cassava mosaic disease?",
+      "Cassava leaves have yellow-green patches, what disease is this?",
+      "Cassava viral disease prevention",
+      "My cassava leaf get patch patch color, na wetin be that?"
+    ],
+    "answer": "Yellow-green mottled patches on cassava leaves signal cassava mosaic disease, a virus spread by whiteflies and infected cuttings. Prevent it by using disease-free, certified stem cuttings, planting mosaic-resistant varieties, uprooting and destroying infected plants early, and controlling whitefly populations with appropriate insecticides."
+  },
+  {
+    "category": "cassava",
+    "questions": [
+      "Does cassava need fertilizer?",
+      "Best fertilizer for cassava farming",
+      "How should I fertilize my cassava farm?",
+      "Which fertilizer I go use for cassava?"
+    ],
+    "answer": "Cassava can grow on poor soils, but yields improve with fertilizer. Apply NPK 15:15:15 at about 400kg per hectare, 6-8 weeks after planting, and consider adding potassium-rich fertilizer like Muriate of Potash since cassava roots use a lot of potassium. Avoid excess nitrogen, as it favors leaf growth over root (tuber) development."
+  },
+  {
+    "category": "cassava",
+    "questions": [
+      "When should I harvest cassava?",
+      "How do I know cassava is ready to harvest?",
+      "Cassava harvesting time after planting",
+      "How many months before I fit harvest my cassava?"
+    ],
+    "answer": "Cassava is typically ready for harvest 8-12 months after planting for most varieties, though some can be left up to 18-24 months without spoiling underground. You can check readiness by gently uncovering soil near the stem to see if the tubers have reached a good size; leaves yellowing and dropping is also a general sign of maturity."
+  },
+  {
+    "category": "tomato",
+    "questions": [
+      "When is the best time to plant tomatoes?",
+      "Tomato planting season in Nigeria",
+      "What month should I start tomato farming?",
+      "When I go plant my tomato?"
+    ],
+    "answer": "Tomatoes grow best in the dry season under irrigation, from October to February, when disease pressure from rain is lower. Rainy season planting is possible (April-May) but requires good drainage and closer disease management, since wet conditions increase blight risk."
+  },
+  {
+    "category": "tomato",
+    "questions": [
+      "How do I raise tomato seedlings before transplanting?",
+      "Tomato nursery preparation and spacing",
+      "How to nurse tomato before planting in the field",
+      "How I go nurse tomato before I plant am for farm?"
+    ],
+    "answer": "Sow tomato seeds in a nursery bed or seed trays and keep moist and lightly shaded. Seedlings are ready to transplant after 3-4 weeks, once they have 4-5 true leaves. In the main field, space plants at 60cm between rows and 45-50cm between plants for good airflow and easier spraying."
+  },
+  {
+    "category": "tomato",
+    "questions": [
+      "How do I control Tuta absoluta in tomatoes?",
+      "My tomato leaves have tunnels and fruits are rotting, what pest is this?",
+      "Tomato pest control leaf miner borer",
+      "Wetin dey enter my tomato fruit make e rotten like that?"
+    ],
+    "answer": "Tunneled leaves and fruit damage point to Tuta absoluta, a destructive tomato leaf miner. Control it using pheromone traps to monitor and reduce moth populations, remove and destroy infested leaves and fruits, rotate approved insecticides like Emamectin benzoate to avoid resistance, and avoid planting tomatoes near old infested fields."
+  },
+  {
+    "category": "tomato",
+    "questions": [
+      "How should I fertilize tomatoes?",
+      "Best fertilizer for tomato farming in Nigeria",
+      "Tomato fertilizer application schedule",
+      "Which fertilizer good for tomato?"
+    ],
+    "answer": "Apply NPK 15:15:15 at transplanting, about 300-400kg per hectare, then top-dress with Calcium Nitrate or a balanced NPK every 2-3 weeks during flowering and fruiting. Adequate calcium is especially important to prevent blossom-end rot, a common problem in tomatoes grown on calcium-poor soils."
+  },
+  {
+    "category": "tomato",
+    "questions": [
+      "How do I control early blight in tomatoes?",
+      "My tomato leaves have brown target-like spots, what disease is this?",
+      "Tomato disease brown spots with yellow ring",
+      "My tomato leaf get brown spot with circle for inside, na wetin be that?"
+    ],
+    "answer": "Brown spots with concentric rings (target-like pattern) on lower leaves are typical of early blight, a fungal disease favored by humidity. Manage it by removing and destroying infected leaves, avoiding overhead watering, spacing plants well for airflow, rotating crops each season, and applying a fungicide like Mancozeb when symptoms first appear."
+  },
+  {
+    "category": "tomato",
+    "questions": [
+      "When should I harvest tomatoes?",
+      "How do I know tomatoes are ready to pick?",
+      "Tomato harvesting time after transplanting",
+      "How I go know say my tomato don ready for pluck?"
+    ],
+    "answer": "Tomatoes are usually ready for first harvest 70-85 days after transplanting. Pick fruits when they show a color break (starting to turn from green to yellow/orange/red) if you need to transport them to market, or fully red if selling for immediate local consumption. Harvest every 3-4 days during peak fruiting to avoid overripe fruit and encourage more flowering."
+  },
+  {
+    "category": "general",
+    "questions": [
+      "Should I test my soil before applying fertilizer?",
+      "General fertilizer and soil health advice",
+      "How do I know what fertilizer my soil needs?",
+      "How I go know the correct fertilizer for my soil?"
+    ],
+    "answer": "Yes, soil testing helps you apply the right type and amount of fertilizer instead of guessing, which saves money and improves yield. If a soil test isn't available, watch your crop for signs — pale, yellowing leaves often mean nitrogen deficiency; purplish leaves can mean phosphorus deficiency; and weak stems or poor fruiting can point to potassium deficiency. Rotating crops and adding organic manure also helps maintain soil health over time."
+  }
+]
