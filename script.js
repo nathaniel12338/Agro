@@ -26,7 +26,10 @@
   // CONFIG
   // ------------------------------------------------------------------
 
-  const API_BASE = (window.AGRI_CHATBOT_API || "http://127.0.0.1:8000").replace(/\/$/, "");
+  const API_BASE = (
+  window.AGRI_CHATBOT_API ||
+  "https://agro-production-bed1.up.railway.app"
+).replace(/\/$/, "");
 
   // ------------------------------------------------------------------
   // ICONS (inline SVG so no external icon library is needed)
