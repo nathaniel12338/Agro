@@ -26,19 +26,14 @@
   --agri-primary-dark: #235F3E;
   --agri-mint: #B7E4C7;
   --agri-soil: #8A5A34;
-
   --agri-paper: #F6F4EC;
-
   --agri-text: #1E2A22;
   --agri-text-soft: #5B6B60;
-
   --agri-white: #FFFFFF;
-
   --agri-border: #E4E0D2;
 
   --agri-shadow:
     0 10px 30px rgba(23, 57, 42, 0.28);
-
 
   /* ---------- Widget positioning ---------- */
 
@@ -103,6 +98,7 @@
   box-shadow: var(--agri-shadow);
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -135,7 +131,6 @@
 
 
 .agri-launcher svg {
-
   width: 28px;
   height: 28px;
 }
@@ -146,7 +141,6 @@
 #agri-chat-root.agri-open
 .agri-launcher
 .agri-icon-chat {
-
   display: block;
 }
 
@@ -154,7 +148,6 @@
 #agri-chat-root.agri-open
 .agri-launcher
 .agri-icon-leaf {
-
   display: none;
 }
 
@@ -162,7 +155,6 @@
 #agri-chat-root:not(.agri-open)
 .agri-launcher
 .agri-icon-chat {
-
   display: none;
 }
 
@@ -192,15 +184,18 @@
 @keyframes agri-sprout-in {
 
   0% {
+
     transform: scale(0.4);
+
     opacity: 0;
   }
 
   100% {
+
     transform: scale(1);
+
     opacity: 1;
   }
-
 }
 
 
@@ -213,7 +208,6 @@
   position: absolute;
 
   right: 0;
-
   bottom: 78px;
 
   width: 380px;
@@ -222,6 +216,7 @@
    * Prevent the chat from becoming too tall on smaller
    * laptop screens.
    */
+
   height: min(
     620px,
     calc(100vh - 110px)
@@ -321,7 +316,6 @@
 
 
 .agri-header-icon svg {
-
   width: 19px;
   height: 19px;
 }
@@ -411,7 +405,6 @@
 
 
 .agri-close-btn svg {
-
   width: 19px;
   height: 19px;
 }
@@ -451,6 +444,7 @@
   /*
    * Better scrolling on phones.
    */
+
   -webkit-overflow-scrolling: touch;
 
   overscroll-behavior: contain;
@@ -462,13 +456,11 @@
 /* Scrollbar */
 
 .agri-messages::-webkit-scrollbar {
-
   width: 5px;
 }
 
 
 .agri-messages::-webkit-scrollbar-track {
-
   background: transparent;
 }
 
@@ -531,7 +523,6 @@
     transform:
       translateY(0);
   }
-
 }
 
 
@@ -734,16 +725,12 @@
 
 
 .agri-typing span:nth-child(2) {
-
-  animation-delay:
-    0.15s;
+  animation-delay: 0.15s;
 }
 
 
 .agri-typing span:nth-child(3) {
-
-  animation-delay:
-    0.3s;
+  animation-delay: 0.3s;
 }
 
 
@@ -768,7 +755,6 @@
     opacity:
       1;
   }
-
 }
 
 
@@ -938,7 +924,6 @@
 
     bottom: 74px;
   }
-
 }
 
 
@@ -965,6 +950,7 @@
     height: 100%;
 
     right: auto;
+
     bottom: auto;
 
     pointer-events: none;
@@ -972,7 +958,7 @@
 
 
   /*
-   * Keep launcher clickable.
+   * Keep launcher clickable when chat is closed.
    */
 
   .agri-launcher {
@@ -994,6 +980,23 @@
     z-index: 1000001;
 
     pointer-events: auto;
+  }
+
+
+  /*
+   * IMPORTANT FIX
+   *
+   * Hide the Agro floating icon while the chat
+   * is open on mobile.
+   *
+   * This prevents the icon from covering the
+   * send message button.
+   */
+
+  #agri-chat-root.agri-open
+  .agri-launcher {
+
+    display: none;
   }
 
 
@@ -1038,7 +1041,8 @@
   }
 
 
-  #agri-chat-root.agri-open .agri-panel {
+  #agri-chat-root.agri-open
+  .agri-panel {
 
     transform:
       translateY(0);
@@ -1280,7 +1284,6 @@
 
     height: 18px;
   }
-
 }
 
 
@@ -1364,7 +1367,6 @@
 
     padding-right: 8px;
   }
-
 }
 
 
@@ -1426,7 +1428,6 @@ and (orientation: landscape) {
 
     height: 40px;
   }
-
 }
 
 
@@ -1459,6 +1460,5 @@ and (orientation: landscape) {
 
     animation: none;
   }
-
 }
 
